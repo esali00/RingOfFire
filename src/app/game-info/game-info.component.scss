@@ -1,0 +1,26 @@
+.game-info {
+    position: absolute;
+    bottom: 32px;
+    right: 200px;
+    left: 100px;
+}
+
+.padding {
+    padding: 0 16px ;
+}
+
+.d-none {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .game-info {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+    }
+}
+

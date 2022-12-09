@@ -1,0 +1,94 @@
+.indigo {
+    background-color: indigo;
+}
+
+.white {
+    color: white;
+}
+
+.game-field {
+    background-image: url("../../assets/board.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.card-stack {
+   position: relative;
+
+   img {
+    margin-top: -70px;
+    position: absolute;
+    width: 120px;
+   }
+}
+
+.top-card {
+    cursor: pointer;
+}
+
+.played-card {
+    transform: scale(1) translateX(200px) rotate(-5deg);
+}
+
+.pick-card {
+    transform: scale(1) translateX(200px) rotate(5deg);
+    animation: pick-card-animation 1.25s ease-in-out;
+}
+
+@keyframes pick-card-animation {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.75);
+    }
+    60% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1) translateX(200px) rotate(5deg);
+    }
+}
+
+.player-position {
+    position: absolute;
+    right: 0;
+}
+
+.btn-add {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+}
+
+@media (max-width: 600px) {
+    
+    .card-stack img {
+        margin-left: -30px;
+        margin-top: -100px;
+    }
+    .btn-add {
+        position: absolute;
+        left: 32px;
+        top: 32px;
+    }
+}
+
+.display-player {
+    scroll-behavior: smooth;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 180px;
+    width: 250px;
+    overflow-y: auto;
+}
+
+
+
+

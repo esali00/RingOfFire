@@ -1,0 +1,13 @@
+<mat-card class="game-info">
+    <mat-card-content>
+        <mat-card-title class="padding" [class.d-none]="pickedCard">Please pick a card</mat-card-title>
+        <mat-card-title>{{ title }}</mat-card-title>
+    </mat-card-content>
+   
+    <mat-card-content>
+        <mat-card-content [class.d-none]="pickedCard">
+            Please pick a card on the card stack  
+        </mat-card-content>
+             {{ description }}
+        </mat-card-content>
+</mat-card>
